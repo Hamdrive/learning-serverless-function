@@ -12,14 +12,16 @@
     <p id="response-output">Response Placeholder</p>
 
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const fetchBtn = document.getElementById('fetch-btn')
-        const responseText = document.getElementById('response-output')
+      document.addEventListener("DOMContentLoaded", () => {
+        const fetchBtn = document.getElementById("fetch-btn");
+        const responseText = document.getElementById("response-output");
 
-        fetchBtn.addEventListener('click', () => {
-          responseText.innerText = 'Static Text Replacement'
-        })
-      })
+        fetchBtn.addEventListener("click", async () => {
+          const response = await fetch("/.netlify/functions/hello-world")
+            .then((res) => res.json())
+            .then((data) => (responseText.innerText = JSON.stringify(data)));
+        });
+      });
     </script>
   </body>
 </html>
