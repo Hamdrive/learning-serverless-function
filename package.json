@@ -1,0 +1,22 @@
+{
+  "name": "learning-serverless-function",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamdrive/learning-serverless-function.git"
+  },
+  "author": "Hamza Husein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hamdrive/learning-serverless-function/issues"
+  },
+  "homepage": "https://github.com/Hamdrive/learning-serverless-function#readme",
+  "devDependencies": {
+    "node-fetch": "^3.1.0"
+  }
+}
